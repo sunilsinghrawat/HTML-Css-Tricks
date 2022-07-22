@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multi Column design with css Flex</title>
+<style>
+	.container{max-width:1180px;margin:0 auto;}
+		.twoCol, .fourSqure {display:flex;flex-wrap:wrap;justify-content: space-between;align-content: space-between;}
+		.fourSqure, .singleImage{width:49.5%;position:relative;}
+		.singleImage:after{content:"";padding-bottom:100%;}
+		.cmnBox{background:#ccc;padding:10px;box-sizing:border-box;height:100%;position:relative;display: flex;
+    align-items: center;justify-content: center;}
+		.cmnBox:after {content: "";padding-bottom: 50%;display: inline-block;}
+		.fourSqure .cmnBox{width:49%;height:49%;}	
+		.contentBox{border:1px solid #ccc;text-align:center;width:100%;}
+		.contentBox p{width:100%;}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="twoCol">
+					
+  <div class="fourSqure">
+    <div class="cmnBox"><div class="sqrt">1</div></div>
+    <div class="cmnBox"><div class="sqrt">2</div></div>
+    <div class="cmnBox"><div class="sqrt">3</div></div>
+    <div class="cmnBox"><div class="sqrt">4</div></div>
+  </div>
+
+  <div class="singleImage">
+    <div class="cmnBox fullOne"><div class="contentBox">
+      <p>test one</p>
+      <span>Full One</span></div></div>
+  </div>
+
+  </div>
+</div>
+</body>
+</html>
