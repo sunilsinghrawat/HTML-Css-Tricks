@@ -1,0 +1,15 @@
+/*set media query according your device		
+@media(max-width:380px){
+			element{height:100dvh;}
+		}
+
+The new Viewport Units are that solution:
+100svh refers to 100% of the height of the smallest possible viewport.
+100lvh refers to 100% of the height of the largest possible viewport.
+100dvh refers to 100% of the dynamic viewport height — meaning the value will change as the user scrolls.
+
+
+100dvh will work for dyamic changes. article link below...
+https://stackoverflow.com/questions/68094609/ios-15-safari-floating-address-bar
+https://webkit.org/blog/12445/new-webkit-features-in-safari-15-4/
+
