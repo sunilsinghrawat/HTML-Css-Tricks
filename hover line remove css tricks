@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.ef {
+	display:inline-block;
+    background-image: linear-gradient(0deg,currentColor min(1px),transparent min(1px));
+    transition:.2s all;
+	background-image: linear-gradient(0deg,currentColor,currentColor min(2px,0.1em),transparent min(2px,0.1em),transparent);
+    transition: background-size .2s,color .2s;
+    background-repeat: no-repeat;
+	background-size: 100% 100%;
+    text-decoration:none;
+    
+}
+.ef:hover{background-size: 0 100%;}
+</style>
+</head>
+<body>
+
+<p class="ef">Hover Effect</p>
+
+</body>
+</html>
+
+
