@@ -1,0 +1,6 @@
+right: calc((100vw - 1280px));
+position:absolute;
+bottom:20px;
+
+
+If the container width is 1280px and we want to fix an object to one side of the container, we can use this CSS.
